@@ -5,13 +5,53 @@
   "type": "module",
   "main": "./index.js",
   "types": "./index.d.ts",
-  "exports": { ".": { "types": "./index.d.ts", "import": "./index.js" } },
-  "files": ["index.js", "index.d.ts", "README.md", "LICENSE"],
-  "scripts": { "test": "node --test" },
-  "keywords": ["openai", "llm", "ai-gateway", "persian", "gisoo"],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "gisoo",
+    "openai",
+    "llm",
+    "ai",
+    "ai-api",
+    "openai-compatible",
+    "persian",
+    "chat",
+    "embeddings"
+  ],
   "license": "MIT",
   "homepage": "https://gisoo.pro",
-  "repository": { "type": "git", "url": "git+https://github.com/netarz/gisoo-js.git" },
-  "engines": { "node": ">=18" },
-  "dependencies": { "openai": "^4.0.0" }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netarz/gisoo-js.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
+  },
+  "author": {
+    "name": "Gisoo",
+    "email": "info@gisoo.pro",
+    "url": "https://gisoo.pro"
+  },
+  "bugs": {
+    "url": "https://github.com/netarz/gisoo-js/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
