@@ -4,10 +4,8 @@ A tiny helper that gives you the official [`openai`](https://www.npmjs.com/packa
 
 ## Install
 
-Not on npm yet. Install from GitHub:
-
 ```bash
-npm install github:netarz/gisoo-js
+npm install gisoo openai
 ```
 
 ## Use
@@ -46,10 +44,8 @@ console.log(images.map((m) => m.id));
 
 Docs (Persian): <https://gisoo.pro/docs> · App: <https://gisoo.pro>
 
-## Publish (maintainers)
+## Releases (maintainers)
 
-```bash
-npm publish
-```
+Releases are published by GitHub Actions with an npm provenance statement. Bump the version in `package.json`, commit, then push a tag such as `v0.1.1`.
 
-MIT licensed. Made by [NetArz](https://netarz.ir).
+MIT licensed. Made by [Gisoo](https://gisoo.pro).
