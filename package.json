@@ -1,5 +1,5 @@
 {
-  "name": "@gisoo/sdk",
+  "name": "gisoo-sdk",
   "version": "0.1.0",
   "description": "Tiny helper that points the official OpenAI Node client at Gisoo (gisoo.pro), an OpenAI-compatible AI API.",
   "type": "module",
