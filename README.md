@@ -1,11 +1,12 @@
 # gisoo-js
+n[![npm](https://img.shields.io/npm/v/@gisoo/sdk)](https://www.npmjs.com/package/@gisoo/sdk)
 
-A tiny helper that gives you the official [`openai`](https://www.npmjs.com/package/openai) Node client already pointed at [Gisoo](https://gisoo.pro), a Persian AI app with an OpenAI-compatible API (chat, responses, embeddings, images, speech, music, video). ESM, Node 18+, TypeScript types included.
+A tiny helper that gives you the official [`openai`](https://www.npmjs.com/package/openai) Node client already pointed at [Gisoo](https://gisoo.pro), a multi-model AI platform with an OpenAI-compatible API (chat, responses, embeddings, images, speech, music, video). ESM, Node 18+, TypeScript types included.
 
 ## Install
 
 ```bash
-npm install gisoo openai
+npm install @gisoo/sdk openai
 ```
 
 ## Use
@@ -13,7 +14,7 @@ npm install gisoo openai
 Create a key in the Gisoo app (keys look like `sk-gisoo-v1-...`) and export `GISOO_API_KEY`.
 
 ```js
-import { createGisoo } from 'gisoo';
+import { createGisoo } from '@gisoo/sdk';
 
 const client = createGisoo(); // or createGisoo({ apiKey: 'sk-gisoo-v1-...' })
 const r = await client.chat.completions.create({
@@ -30,7 +31,7 @@ Iran mirror: `createGisoo({ iran: true })` uses `https://ir.gisoo.pro/api/v1`.
 ### List models (no key needed)
 
 ```js
-import { listModels } from 'gisoo';
+import { listModels } from '@gisoo/sdk';
 const images = await listModels({ type: 'image' }); // chat, image, audio, embedding, video, music
 console.log(images.map((m) => m.id));
 ```
